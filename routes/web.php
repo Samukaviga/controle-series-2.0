@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\Series;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,5 +30,8 @@ Route::get('/email', function () {
         10,
     );
 });
+
+
+
 
 require __DIR__ . '/auth.php';
