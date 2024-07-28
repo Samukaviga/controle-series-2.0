@@ -2,6 +2,7 @@
 
 namespace Tests;
 
+
 use Illuminate\Contracts\Console\Kernel;
 
 trait CreatesApplication
@@ -17,6 +18,6 @@ trait CreatesApplication
 
         $app->make(Kernel::class)->bootstrap();
 
-        return $app;
+        return $app; 
     }
 }
