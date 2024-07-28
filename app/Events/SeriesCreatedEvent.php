@@ -10,11 +10,11 @@ use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
 
-class SeriesCreated
+class SeriesCreatedEvent
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
-   
+  
     public function __construct(
         public readonly string $seriesName, //apenas para leitura
         public readonly int $seriesId,
@@ -22,10 +22,10 @@ class SeriesCreated
         public readonly int $episodesPerSeason,
     )
     {
-            
+        //
     }
 
-
+   
     public function broadcastOn()
     {
         return new PrivateChannel('channel-name');
