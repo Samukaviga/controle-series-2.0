@@ -21,8 +21,9 @@ class SeriesFormRequest extends FormRequest
             'cover' => [
                 File::image(),
             ],
+           /*
             'seasonsQty' => ['required'],
-            'episodesPerSeason' => ['required'],
+            'episodesPerSeason' => ['required'],  */
         ];
     }
 }

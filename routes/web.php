@@ -32,6 +32,5 @@ Route::get('/email', function () {
 });
 
 
-
-
 require __DIR__ . '/auth.php';
+
